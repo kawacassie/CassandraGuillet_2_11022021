@@ -9,7 +9,11 @@
 </head>
 <body>
 	<div id="bloc_page">
+<<<<<<< HEAD
+
+=======
 		
+>>>>>>> db9ac40853b14a27953756cd436b3346f92fffe1
 		<header>
 			<div id="logo">
 				<img src="Images/logo.png" alt="Logo Reservia" />
@@ -157,7 +161,10 @@
 					</ul>
 				</div>
 			</aside>
+<<<<<<< HEAD
+=======
 
+>>>>>>> db9ac40853b14a27953756cd436b3346f92fffe1
 		</section>
 
 		<section id="activites">
