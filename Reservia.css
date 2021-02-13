@@ -19,8 +19,57 @@ body
 
 #bloc_page
 {
-	width: 50%;
+	width: 70%;
 	margin: auto;
 }
 
 /* Header */
+
+#logo
+{
+	display: flex; 
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+#logo img 
+{
+	width: 6em; 
+	height: 3em; 
+}
+
+/* Navigation */
+
+nav ul
+{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+nav li
+{
+	margin-right: 5em;
+}
+
+nav a.ancre
+{
+	font-size: 1em;
+	color: #181818;
+	text-decoration: none;
+}
+
+nav a.inscription
+{
+	font-size: 1em;
+	color: #0065FC;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #0065FC;
+	border-top: 1px solid #0065FC;
+	padding-top: 1.5em;
+}
