@@ -1,0 +1,26 @@
+/* Polices personnalisées */
+
+@font-face
+{
+	font-family: "Raleway";
+	src: url('Police/Raleway-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Éléments principaux de la page */
+
+body
+{
+	background-color: white;
+	font-family: "Raleway", Arial, sans-serif;
+	color: #181818;
+}
+
+#bloc_page
+{
+	width: 50%;
+	margin: auto;
+}
+
+/* Header */
