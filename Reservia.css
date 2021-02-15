@@ -233,9 +233,10 @@ aside
 	border-radius: 2em; 
 }
 
-article h2
+article h2, section h2
 {
 	padding-left: 1.5em;
+	padding-bottom: 0.8em;
 }
 
 .blue
@@ -345,4 +346,73 @@ aside ul
 aside li
 {
 	margin: 2em 2em 1em 0em;
+}
+
+/* Section Activités */
+
+#activites
+{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 2em;
+}
+
+.photo_grand img
+{
+	width: 300px; 
+	height: 420px; 
+	object-fit: cover;
+	border-radius: 1.5em;
+}
+
+.photo_petit1 img, .photo_petit2 img
+{
+	width: 300px;
+	height: 180px; 
+	object-fit: cover;
+	border-radius: 1.5em;
+}
+
+.photo_grand, .photo_petit1, .photo_petit2
+{
+	display: flex;
+	position: relative;
+	border-radius: 2.5em;
+	padding-bottom: 2em;
+	box-shadow: 0.5em 0.5em 1.8em grey;
+
+}
+
+.legende_grand, .legende_petit1, .legende_petit2
+{
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 95%;
+	text-align: left;
+	color: #181818;
+	padding-left: 1em;
+	border-bottom-right-radius: 1.4em;
+	border-bottom-left-radius: 1.4em;
+}
+
+.activite_petit
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.photo_petit1:hover, .photo_petit2:hover, .photo_grand:hover
+{
+	transform: scale(0.9);
+	transition: .3s ease-in-out;
+	box-shadow: 0.4em 0.4em 0.5em grey;
+}
+
+section a
+{
+	text-decoration: none;
+	color: #181818;
 }
