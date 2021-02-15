@@ -157,7 +157,7 @@ a.filter
 
  a.filter:hover
  {
- 	box-shadow: 0.7em 0.7em 1.8em grey;
+ 	box-shadow: 0.4em 0.4em 1.1em grey;
  }
 
  .fa-info
@@ -209,10 +209,33 @@ nav a:hover
 
 /* Section Hébergement */
 
-section.hebergement 
+#hebergement
 {
 	display: flex;
+	justify-content: space-between;
 	margin-bottom: 5em;
+}
+
+article 
+{
+	flex: 3;
+	background-color: #F2F2F2;
+	margin-right: 2em;
+	padding-top: 1em;
+	border-radius: 2em;
+}
+
+aside
+{
+	flex: 1.5;
+	background-color: #F2F2F2;
+	padding-top: 1em;
+	border-radius: 2em; 
+}
+
+article h2
+{
+	padding-left: 1.5em;
 }
 
 .blue
@@ -223,4 +246,103 @@ section.hebergement
 .grey
 {
 	color: #F2F2F2;
+}
+
+article ul
+{
+	display: flex;
+	list-style-type: none;
+}
+
+article li
+{
+	margin: 1em 2em 1em 0em;
+}
+
+
+.heb_photo img 
+
+{
+	width: 250px;
+	height: 200px;
+	border-radius: 1.5em;
+}
+
+.heb_photo, .popu_photo
+{
+	display: flex;
+	position: relative;
+	border: 0.4em white solid;
+	border-radius: 2em;
+	box-shadow: 0.2em 0.2em 1em grey;
+}
+
+.heb_photo:hover, .popu_photo:hover
+{
+	transform: scale(1.1);
+	transition: .3s ease-in-out;
+	box-shadow: 0.4em 0.4em 0.5em grey;
+}
+
+.heb_legende
+{
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	line-height: 0.5em;
+	height: 80px;
+	width: 95%;
+	text-align: left;
+	color: #181818;
+	padding-left: 1em;
+	border-bottom-right-radius: 1.3em; 
+	border-bottom-left-radius: 1.3em;
+}
+
+a.plus 
+{
+	text-decoration: none;
+	color: #181818;
+	font-weight: bold;
+	padding-left: 2em;
+}
+
+aside h2
+{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 1em;
+	padding-right: 2em;
+}
+
+.popu_photo img
+{
+	width: 130px;
+	height: 130px;
+	border-radius: 1.5em;
+}
+
+.popu_legende
+{
+	background-color: white;
+	position: absolute;
+	right: 0;
+	line-height: 1em;
+	height: 100%;
+	width: 60%;
+	text-align: left;
+	color: #181818;
+	padding-left: 1em;
+	border-bottom-right-radius: 1.3em; 
+	border-top-right-radius: 1.3em;
+}
+
+aside ul
+{
+	list-style-type: none;
+}
+
+aside li
+{
+	margin: 2em 2em 1em 0em;
 }
