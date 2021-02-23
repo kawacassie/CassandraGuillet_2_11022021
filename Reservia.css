@@ -387,7 +387,7 @@
 	.legende
 	{
 		background-color: white;
-		height: 10%;
+		height: 15%;
 		text-align: left;
 		color: #181818;
 		padding-left: 1em;
@@ -475,6 +475,17 @@
 			width: auto;
 		}
 
+		aside
+		{
+			height: 800px;
+		}
+
+		article
+		{
+			height: 1500px;
+			background-color: white;
+		}
+
 		#photos_hebergements
 		{
 			flex-direction: column;
@@ -484,31 +495,54 @@
 		.heb_photo
 		{
 			width: 80%;
+			height: 14%;
 			flex-direction: row;
 		}
 
 		.photos
 		{
 			width: 50%;
+			height: 100%;
+		}
+
+		.photos img
+		{
+			border-radius: 1.5em 0 0 1.5em;
 		}
 
 		.heb_legende
 		{
 			width: 50%;
 			height: 100%;
+			border-radius: 0 1.5em 1.5em 0;
+		}
+
+		section
+		{
+			height: 1600px;
 		}
 
 		#activites
 		{
 			flex-direction: column;
+			align-items: center;
 		}
-
-
-	footer
-	{
-		display: flex;
-		flex-direction: column;
-		padding-left: 2em;
-	}
-
+		.activite_grand, .petit
+		{
+			width: 80%;
+		}
+		.activite_grand
+		{
+			height: 15%;
+		}
+		.petit
+		{
+			height: 30%;
+		}
+		footer
+		{
+			display: flex;
+			flex-direction: column;
+			padding-left: 2em;
+		}
 }
