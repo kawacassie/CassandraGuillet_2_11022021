@@ -10,6 +10,11 @@
 
 /* Éléments principaux de la page */
 
+	html
+	{
+		scroll-behavior: smooth;
+	}
+
 	body
 	{
 		background-color: white;
@@ -95,9 +100,13 @@
 		display: flex;
 		list-style-type: none;
 	}
-	header li, nav li
+	nav li
 	{
 		margin-right: 5em;
+	}
+	header li
+	{
+		margin-right: 2em;
 	}
 	a.filter
  	{
@@ -352,6 +361,7 @@
 		border-radius: 1.5em;
 		display: flex;
 		flex-direction: column;
+		box-shadow: 0.2em 0.2em 1em grey;
 	}
 	.activite_petit
 	{
@@ -360,6 +370,7 @@
 		border-radius: 1.5em;
 		display: flex;
 		flex-direction: column;
+		box-shadow: 0.2em 0.2em 1em grey;
 	}
 	.photos_grand
 	{
