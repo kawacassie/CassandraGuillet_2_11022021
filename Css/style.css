@@ -1,12 +1,3 @@
-/* Polices personnalisées */
-
-	@font-face
-	{
-		font-family: "Raleway";
-		src: url('../Police/Raleway-VariableFont_wght.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	}
 
 /* Éléments principaux de la page */
 
@@ -20,11 +11,11 @@
 		background-color: white;
 		font-family: "Raleway", Arial, sans-serif;
 		color: #181818;
-		font-size: 1em;
+		font-size: 16px;
 	}
 	#bloc_page
 	{
-		width: 80%;
+		width: 90%;
 		margin: auto;
 	}
 	header h1, section h2
@@ -48,8 +39,8 @@
 	}
 	#logo img 
 	{
-		width: 6em; 
-		height: 3em; 
+		width: 90px; 
+		height: 50px; 
 	}
 	#recherche
 	{
@@ -58,24 +49,24 @@
 	}
 	.fa-map-marker-alt
 	{
-		height: 2.5em;
+		height: 40px;
 		background-color: #F2F2F2;
-		padding: 1.3em 1.3em 0em 1.3em;
+		padding: 20px 20px 0 20px;
 		border-top-left-radius: 1em;
 		border-bottom-left-radius: 1em;
 	}
 	input[type=search]
 	{
-		height: 4.6em;
-		width: 15em;
+		height: 60px;
+		width: 250px;
 		border: solid #f2f2f2;
 		border-right: none;
 		padding-left: 0.8em;
 	}
 	input[type=submit]
 	{
-		height: 3.8em;
-		width: 8em;
+		height: 60px;
+		width: 150px;
 		background-color: #0065FC;
 		border: none;
 		color: white;
@@ -92,17 +83,12 @@
 	}
 	#filtres
 	{
-		display: inline-flex;
 		flex-wrap: wrap;
 	}
 	header ul
 	{
 		display: flex;
 		list-style-type: none;
-	}
-	nav li
-	{
-		margin-right: 5em;
 	}
 	header li
 	{
@@ -166,6 +152,10 @@
 
 /* Navigation */
 
+	nav
+	{
+		display: flex;
+	}
 	nav ul
 	{
 		display: flex;
@@ -180,12 +170,13 @@
 	}
 	nav a.inscription
 	{
+		align-self: center;
 		font-size: 1em;
 		color: #0065FC;
 		font-weight: bold;
 		text-decoration: none;
 	}
-	nav a:hover
+	.ancre:hover
 	{
 		color: #0065FC;
 		border-top: 1px solid #0065FC;
@@ -246,7 +237,7 @@
 	.photos 
 	{
 		width: 100%;
-		height: 50%;
+		height: 60%;
 	}
 	.photos img 
 	{
@@ -258,7 +249,7 @@
 	.heb_photo
 	{
 		width: 27%;
-		height: 40%;
+		height: 37%;
 		display: flex;
 		flex-direction: column;
 		border: 0.4em white solid;
@@ -274,8 +265,9 @@
 	.heb_legende
 	{
 		background-color: white;
-		height: 50%;
+		height: 40%;
 		text-align: left;
+		line-height: 0.8em;
 		color: #181818;
 		padding-left: 1em;
 		border-bottom-right-radius: 1.3em; 
@@ -450,7 +442,39 @@
 	{
 		#bloc_page
 		{
-			width: auto;
+			width: 95%;
+			font-size: 25px;
+		}
+		#logo img 
+		{
+			width: 250px; 
+			height: 120px; 
+		}
+		header, footer, section h2, h2
+		{
+			font-size: 40px;
+		}
+		.fa-map-marker-alt
+		{
+			padding: 40px;
+		}
+		input[type=search]
+		{
+			height: 120px;
+			width: 400px;
+		}
+		input[type=submit]
+		{
+			height: 120px;
+			width: 150px;
+			background-image: url(../Images/search.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			color: transparent;
+		}
+		#search::placeholder
+		{
+			font-size: 35px;
 		}
 		header ul
 		{
@@ -465,17 +489,26 @@
 		{
 			flex-direction: column;
 		}
+		nav
+		{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		nav a.inscription
+		{
+			align-self: flex-end;
+			padding-bottom: 1em;
+		}
 		nav ul
 		{
 			display: flex;
 			flex-flow: row wrap-reverse;
+			border-bottom: 7px solid #F2F2F2;
 		}
-		nav a:hover 
+		.ancre:active
 		{
-			border-top: none;
-			border-bottom: 2px solid #0065FC;
+			color: #0065FC;
 		}
-
 		main
 		{
 			flex-direction: column-reverse;
@@ -488,49 +521,35 @@
 
 		aside
 		{
-			height: 800px;
+			height: 2000px;
 		}
 
 		article
 		{
-			height: 1500px;
+			height: 4000px;
 			background-color: white;
 		}
-
-		#photos_hebergements
-		{
-			flex-direction: column;
-			align-content: center;
-		}
-
 		.heb_photo
 		{
-			width: 80%;
-			height: 14%;
-			flex-direction: row;
+			width: 90%;
+			height: 15%;
 		}
-
-		.photos
-		{
-			width: 50%;
-			height: 100%;
-		}
-
-		.photos img
-		{
-			border-radius: 1.5em 0 0 1.5em;
-		}
-
 		.heb_legende
 		{
-			width: 50%;
-			height: 100%;
-			border-radius: 0 1.5em 1.5em 0;
+			font-size: 30px;
+			height: 40%;
 		}
-
+		.plus, .popu_legende
+		{
+			font-size: 30px;
+		}
+		.photos 
+		{
+			height: 60%;
+		}
 		section
 		{
-			height: 1600px;
+			height: 3000px;
 		}
 
 		#activites
@@ -550,10 +569,19 @@
 		{
 			height: 30%;
 		}
+		.photos_grand, .photos_petit
+		{
+			height: 70%;
+		}
+		.legende
+		{
+			height: 20%;
+			font-size: 35px;
+		}
 		footer
 		{
 			display: flex;
 			flex-direction: column;
 			padding-left: 2em;
 		}
-}
+	}
