@@ -7,3 +7,5 @@ Technologies utilisées : HTML et CSS
 Interface responsive avec utilisation de Flexbox 
 
 Code versionné pour suivi du projet
+
+https://kawacassie.github.io/CassandraGuillet_2_11022021/
